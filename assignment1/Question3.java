@@ -13,7 +13,7 @@ public class Question3 {
 
         int DFS(TreeNode root, List<List<Integer>> res) {
             if (root == null) {
-                return 0;
+                return -1;
             }
             int left = DFS(root.left, res);
             int right = DFS(root.right, res);
