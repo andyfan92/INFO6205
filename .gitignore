@@ -38,4 +38,4 @@ Thumbs.db
 
 # Private
 .idea/
-INFO5100.iml
+*.iml
