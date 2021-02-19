@@ -24,7 +24,29 @@ class DoubleLinkedList<E> {
                 return "item:" + item.toString() + " ,next: " + next.toString() + " ,prev:" + prev.toString();
             }
 
+            public Node<E> getNext() {
+                return next;
+            }
 
+            public void setNext(Node<E> next) {
+                this.next = next;
+            }
+
+            public Node<E> getPrev() {
+                return prev;
+            }
+
+            public void setPrev(Node<E> prev) {
+                this.prev = prev;
+            }
+
+            public E getItem() {
+                return item;
+            }
+
+            public void setItem(E item) {
+                this.item = item;
+            }
         }
 
         public void addFirst(E e) {
@@ -53,12 +75,17 @@ class DoubleLinkedList<E> {
             return size;
         }
 
-        public int print() {
-            DoubleLinkedList.Node<E> cur = first;
-            while (cur != null) {
-                System.out.print(cur.toString());
-                cur = cur.next;
+        public void print() {
+            String result = "";
+            DoubleLinkedList.Node<E> current = first;
+            while(current.getNext() != null){
+                result += current.getItem();
+                if(current.getNext() != null){
+                    result += ", ";
+                }
+                current = current.getNext();
             }
+            System.out.println(result);
         }
 
     }
