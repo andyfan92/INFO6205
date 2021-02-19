@@ -81,7 +81,7 @@ class DoubleLinkedList<E> {
             while(current.getNext() != null){
                 result += current.getItem();
                 if(current.getNext() != null){
-                    result += ", ";
+                    result += "-";
                 }
                 current = current.getNext();
             }
