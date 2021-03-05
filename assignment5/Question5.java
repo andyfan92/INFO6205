@@ -9,20 +9,25 @@ public class Question5 {
     {
 
         int begin = left;
+
+        if (left == right) {
+            if (arr[left] == 0) {
+                return 0;
+            } else {
+                return 1;
+            }
+        }
+
+        if (arr[left] == 0) {
+            return 0;
+        }
+
+        if (arr[right] == 1) {
+            return right - left + 1;
+        }
+
         while (left < right) {
             int mid = (left + right) / 2;
-
-            if (arr[right] == 0) {
-                return 0;
-            }
-
-            if (mid == right) {
-                if (arr[mid] == 1) {
-                    return mid - begin + 1;
-                } else {
-                    return mid - begin;
-                }
-            }
 
             if (arr[mid] == 1 && arr[mid + 1] == 0) {
                 return mid - begin + 1;
@@ -35,4 +40,6 @@ public class Question5 {
         }
         return 0;
     }
+
+
 }
