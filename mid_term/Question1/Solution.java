@@ -1,7 +1,7 @@
 package mid_term.Question1;
 
 
-//time complexity O(len(m) + len(n)) space complexity O(1)
+//time complexity O(len(n) * len(m)) space complexity O(1)
 public class Solution {
     public boolean areConverging(ListNode n1, ListNode n2){
         ListNode p1 = n1;
