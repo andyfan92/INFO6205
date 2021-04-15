@@ -25,7 +25,7 @@ public class Solution {
         ListNode l2 = new ListNode(2, l3);
         ListNode l1 = new ListNode(1, l2);
 
-        ListNode l5 = new ListNode(5, null);
+        ListNode l5 = new ListNode(5, l3);
         ListNode l4 = new ListNode(4, l5);
 
 
