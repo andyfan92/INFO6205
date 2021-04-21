@@ -1,9 +1,6 @@
 package assignment8;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Question3 {
@@ -46,4 +43,9 @@ public class Question3 {
     }
 
 
+    public static void main(String[] args) {
+        Question3 question3 = new Question3();
+        int res = question3.ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log","cog"));
+        System.out.println(res);
+    }
 }

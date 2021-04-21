@@ -46,6 +46,10 @@ public class Question2 {
     }
 
     public static void main(String[] args) {
+        Question2 question2 = new Question2();
+        int[][] pre = {{0,1}, {1,0}};
+        boolean res = question2.canFinish(2, pre);
+        System.out.println(res);
 
     }
 }

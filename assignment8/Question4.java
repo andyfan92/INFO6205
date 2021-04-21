@@ -56,5 +56,12 @@ public class Question4 {
         }
     }
 
+    public static void main(String[] args) {
+        Question4 question4 = new Question4();
+        char[][] grid = {{'1','1','0','0','0'},{'1','1','0','0','0'},{'0','0','1','0','0'},{'0','0','0','1','1'}};
+        int res = question4.numIslands(grid);
+        System.out.println(res);
+    }
+
 
 }
